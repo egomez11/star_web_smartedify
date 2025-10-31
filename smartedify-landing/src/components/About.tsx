@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiAward, FiSettings, FiHeadphones } from 'react-icons/fi';
+import { images } from '../config/assets';
 import './About.css';
 
 export const About: React.FC = () => {
@@ -17,7 +18,7 @@ export const About: React.FC = () => {
         <div className="about-content">
           <div className="about-image">
             <img 
-              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" 
+              src={images.about.dashboard}
               alt="Dashboard de SmartEdify" 
               className="dashboard-img"
             />

@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
           <div className="contact-methods">
             <div className="contact-method">
               <FiPhone size={24} />
-              <span>+1 234 567 890</span>
+              <span>+51 904042179</span>
             </div>
             <div className="contact-method">
               <FiMail size={24} />
@@ -21,7 +21,7 @@ export const Footer: React.FC = () => {
             </div>
             <div className="contact-method">
               <FiMapPin size={24} />
-              <span>123 App Street, Tech City</span>
+              <span>Calle Carlos Gonzales 251, San Miguel - Lima, Perú</span>
             </div>
           </div>
         </div>

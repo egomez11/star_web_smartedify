@@ -9,12 +9,12 @@ const services = [
   {
     icon: FiShield,
     title: 'Governance Service',
-    description: 'Motor de políticas y reglas de negocio para decisiones automatizadas y gobernanza corporativa.',
+    description: 'Motor de asambleas y democratizacion de la participacion independientemente de en que parte del mundo te encuentras.',
     features: [
-      'Políticas centralizadas (OPA/Cedar)',
-      'Workflows automatizados',
-      'Auditoría de decisiones',
-      'Evaluación en tiempo real'
+      'Asambleas virtuales legalmente validas',
+      'Votacion en tiempo real',
+      'Moderador integrado con IA',
+      'Emision de QR para acceso'
     ]
   },
   {
