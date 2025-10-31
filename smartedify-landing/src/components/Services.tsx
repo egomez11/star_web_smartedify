@@ -1,9 +1,13 @@
 import React from 'react';
+import { 
+  FiShield, FiCheckCircle, FiCalendar, FiPackage, 
+  FiTrendingUp, FiDollarSign, FiUsers, FiFileText 
+} from 'react-icons/fi';
 import './Services.css';
 
 const services = [
   {
-    icon: '⚖️',
+    icon: FiShield,
     title: 'Governance Service',
     description: 'Motor de políticas y reglas de negocio para decisiones automatizadas y gobernanza corporativa.',
     features: [
@@ -14,7 +18,7 @@ const services = [
     ]
   },
   {
-    icon: '🛡️',
+    icon: FiCheckCircle,
     title: 'Compliance Service',
     description: 'Cumplimiento normativo GDPR/LGPD con DSAR automatizado y residencia de datos por jurisdicción.',
     features: [
@@ -25,7 +29,7 @@ const services = [
     ]
   },
   {
-    icon: '📅',
+    icon: FiCalendar,
     title: 'Reservations Service',
     description: 'Gestión inteligente de áreas comunes con disponibilidad en tiempo real y QR para acceso.',
     features: [
@@ -36,7 +40,7 @@ const services = [
     ]
   },
   {
-    icon: '🏗️',
+    icon: FiPackage,
     title: 'Asset Management',
     description: 'Control total de activos, mantenimiento preventivo y trazabilidad de equipamiento.',
     features: [
@@ -47,7 +51,7 @@ const services = [
     ]
   },
   {
-    icon: '💰',
+    icon: FiTrendingUp,
     title: 'Finance Service',
     description: 'Contabilidad completa, facturación automática y reportes financieros en tiempo real.',
     features: [
@@ -58,7 +62,7 @@ const services = [
     ]
   },
   {
-    icon: '💵',
+    icon: FiDollarSign,
     title: 'Payroll Service',
     description: 'Nómina automatizada con cálculo de impuestos, prestaciones y dispersión bancaria.',
     features: [
@@ -69,7 +73,7 @@ const services = [
     ]
   },
   {
-    icon: '👥',
+    icon: FiUsers,
     title: 'HR Compliance',
     description: 'Recursos humanos con cumplimiento laboral, expedientes digitales y evaluaciones.',
     features: [
@@ -80,7 +84,7 @@ const services = [
     ]
   },
   {
-    icon: '📄',
+    icon: FiFileText,
     title: 'Documents Service',
     description: 'Gestión documental con firma electrónica, versionado y almacenamiento seguro WORM.',
     features: [
@@ -105,18 +109,23 @@ export const Services: React.FC = () => {
         </div>
 
         <div className="services-grid">
-          {services.map((service, index) => (
-            <div key={index} className="service-item">
-              <div className="service-item-icon">{service.icon}</div>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-              <ul className="service-features">
-                {service.features.map((feature, idx) => (
-                  <li key={idx}>{feature}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {services.map((service, index) => {
+            const IconComponent = service.icon;
+            return (
+              <div key={index} className="service-item">
+                <div className="service-item-icon">
+                  <IconComponent size={32} />
+                </div>
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+                <ul className="service-features">
+                  {service.features.map((feature, idx) => (
+                    <li key={idx}>{feature}</li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

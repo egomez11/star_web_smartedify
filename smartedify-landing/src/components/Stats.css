@@ -12,17 +12,37 @@
 
 .stat-item {
   text-align: center;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-base);
+}
+
+.stat-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+}
+
+.stat-icon {
+  margin-bottom: var(--spacing-md);
+  display: inline-flex;
+  padding: var(--spacing-md);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-md);
 }
 
 .stat-number {
   font-size: var(--font-size-5xl);
   font-weight: 800;
   margin-bottom: var(--spacing-xs);
+  line-height: 1;
 }
 
 .stat-label {
-  font-size: var(--font-size-lg);
-  opacity: 0.9;
+  font-size: var(--font-size-base);
+  opacity: 0.95;
+  line-height: 1.5;
 }
 
 @media (max-width: 640px) {

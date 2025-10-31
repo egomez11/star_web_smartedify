@@ -1,11 +1,12 @@
 import React from 'react';
+import { FiLayers, FiCheckCircle, FiShield, FiClock } from 'react-icons/fi';
 import './Stats.css';
 
 const stats = [
-  { number: '8', label: 'Servicios Operativos Integrados' },
-  { number: '99.95%', label: 'Disponibilidad Garantizada' },
-  { number: '100%', label: 'Cumplimiento Normativo' },
-  { number: '24/7', label: 'Soporte Empresarial' }
+  { icon: FiLayers, number: '8', label: 'Servicios Operativos Integrados' },
+  { icon: FiCheckCircle, number: '99.95%', label: 'Disponibilidad Garantizada' },
+  { icon: FiShield, number: '100%', label: 'Cumplimiento Normativo' },
+  { icon: FiClock, number: '24/7', label: 'Soporte Empresarial' }
 ];
 
 export const Stats: React.FC = () => {
@@ -13,12 +14,18 @@ export const Stats: React.FC = () => {
     <section className="stats">
       <div className="container">
         <div className="stats-grid">
-          {stats.map((stat, index) => (
-            <div key={index} className="stat-item">
-              <div className="stat-number">{stat.number}</div>
-              <div className="stat-label">{stat.label}</div>
-            </div>
-          ))}
+          {stats.map((stat, index) => {
+            const IconComponent = stat.icon;
+            return (
+              <div key={index} className="stat-item">
+                <div className="stat-icon">
+                  <IconComponent size={36} />
+                </div>
+                <div className="stat-number">{stat.number}</div>
+                <div className="stat-label">{stat.label}</div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

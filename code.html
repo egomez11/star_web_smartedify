@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>App Landing Page</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#1E3FA7",
+            secondary: "#F97316",
+            accent: "#5098EA",
+            "background-light": "#FFFFFF",
+            "background-dark": "#111827",
+            "surface-light": "#F9FAFB",
+            "surface-dark": "#1F2937",
+            "text-light": "#374151",
+            "text-dark": "#E5E7EB",
+            "subtext-light": "#6B7280",
+            "subtext-dark": "#9CA3AF",
+          },
+          fontFamily: {
+            display: ["Poppins", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+          },
+        },
+      },
+    };
+  </script>
+<style>
+    .diagonal-clip-top {
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+    .diagonal-clip-bottom {
+      clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    }
+    .diagonal-clip-both {
+        clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    }
+  </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<header class="bg-primary text-white fixed top-0 left-0 right-0 z-50 shadow-md">
+<div class="container mx-auto px-6 py-4 flex justify-between items-center">
+<a class="text-2xl font-bold" href="#">AppCo</a>
+<nav class="hidden md:flex space-x-6 items-center">
+<a class="hover:text-secondary transition-colors" href="#about">About</a>
+<a class="hover:text-secondary transition-colors" href="#features">Features</a>
+<a class="hover:text-secondary transition-colors" href="#pricing">Pricing</a>
+<a class="hover:text-secondary transition-colors" href="#blog">Blog</a>
+<a class="hover:text-secondary transition-colors" href="#contact">Contact</a>
+<a class="bg-secondary text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition" href="#">Download Now</a>
+</nav>
+<button class="md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main>
+<section class="bg-primary text-white pt-32 pb-20 diagonal-clip-top">
+<div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/2 text-center md:text-left">
+<h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">A Modern App For Your Needs</h1>
+<p class="text-lg mb-8 opacity-80">Discover a seamless experience with our feature-rich application. Designed to simplify your life and boost your productivity.</p>
+<div class="flex justify-center md:justify-start gap-4">
+<a class="bg-secondary text-white px-6 py-3 rounded-md font-semibold hover:bg-opacity-90 transition" href="#download">Get Started</a>
+<a class="bg-white/20 text-white px-6 py-3 rounded-md font-semibold hover:bg-white/30 transition" href="#features">Learn More</a>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="App interface on a tablet" class="rounded-lg shadow-2xl transform md:rotate-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApzoyTyrTFU0ksFQvu6jK3XoW9N37_iarYCZ3aE3wNrOI2awYJzDsR_zp8r5GkRopsOi7PoEzKaZ9d78Xbsol31hLaGehGqXApPEH8bL53hUZ5AaD5zPWeaOPupZlZY-TJtHa5VE3z3CDxYiS1HWT6cKRWKG4IrhcXMhfFhq_4_kUT-ZlcM20Sg43GK1Shl-j0z0TiU6P9-pd-BpYXsCtukpO2UFT6-9P6ENzp8TcDM-EpAmiidw0Nwc4_V6TLU7v99-troh60AnA"/>
+</div>
+</div>
+</section>
+<section class="py-20 bg-surface-light dark:bg-surface-dark" id="about">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark">About Our App</h2>
+<p class="mt-4 text-subtext-light dark:text-subtext-dark max-w-2xl mx-auto">We are dedicated to creating the best mobile experience. Our app is built with cutting-edge technology and a user-centric approach.</p>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/2">
+<img alt="Two smartphones showing app UI" class="rounded-lg shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2C7IC4ivQFfrhcEO7mFEMeYuEWtAnq1JmSn5uGRvQbJzTGOP11v8tdJ1H_XQdAPLDVK5bQaTckM-OabR4_lpXiL4tF5TOHmkrsK1wn9bNWdHENAKOb01-tzAWLfvL29mYZp49cOqCSv23em7jzemB8578tP73X_USBMsnaVUKM-tmdlZkj_VwTLGYcbFlPuKeC3Q76gEzvN483fPl_Iwm_tLib5OFKB8nmSbn5JDW0jULE4oyEaywmVqUvV1e9nruCNYiWAlZeEk"/>
+</div>
+<div class="md:w-1/2 space-y-8">
+<div class="flex items-start gap-4">
+<div class="bg-accent text-white p-3 rounded-full"><span class="material-symbols-outlined">palette</span></div>
+<div>
+<h3 class="text-xl font-semibold mb-2">Best Mobile App</h3>
+<p class="text-subtext-light dark:text-subtext-dark">Our app combines a beautiful design with powerful functionality to provide an unparalleled user experience.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-accent text-white p-3 rounded-full"><span class="material-symbols-outlined">settings</span></div>
+<div>
+<h3 class="text-xl font-semibold mb-2">Easy To Customize</h3>
+<p class="text-subtext-light dark:text-subtext-dark">Personalize the app to fit your workflow. With flexible settings, you can make it truly your own.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-accent text-white p-3 rounded-full"><span class="material-symbols-outlined">support_agent</span></div>
+<div>
+<h3 class="text-xl font-semibold mb-2">24/7 Support</h3>
+<p class="text-subtext-light dark:text-subtext-dark">Our dedicated support team is always ready to help you with any questions or issues you may encounter.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-background-light dark:bg-background-dark" id="features">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark">Awesome Features</h2>
+<p class="mt-4 text-subtext-light dark:text-subtext-dark max-w-2xl mx-auto">Explore the powerful features that make our app stand out from the rest.</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="text-center p-6 bg-surface-light dark:bg-surface-dark rounded-lg shadow-md">
+<div class="bg-accent text-white p-4 rounded-full inline-block mb-4"><span class="material-symbols-outlined">all_inclusive</span></div>
+<h3 class="text-xl font-semibold mb-2">Unlimited Features</h3>
+<p class="text-subtext-light dark:text-subtext-dark">Get access to a full suite of tools without any limitations. Your creativity is the only boundary.</p>
+</div>
+<div class="text-center p-6 bg-surface-light dark:bg-surface-dark rounded-lg shadow-md">
+<div class="bg-accent text-white p-4 rounded-full inline-block mb-4"><span class="material-symbols-outlined">hd</span></div>
+<h3 class="text-xl font-semibold mb-2">High Resolution</h3>
+<p class="text-subtext-light dark:text-subtext-dark">Enjoy a crisp and clear interface on any device, from mobile phones to large desktop monitors.</p>
+</div>
+<div class="text-center p-6 bg-surface-light dark:bg-surface-dark rounded-lg shadow-md">
+<div class="bg-accent text-white p-4 rounded-full inline-block mb-4"><span class="material-symbols-outlined">brush</span></div>
+<h3 class="text-xl font-semibold mb-2">Modern Design</h3>
+<p class="text-subtext-light dark:text-subtext-dark">A clean, intuitive, and beautiful design that makes using the app a delightful experience.</p>
+</div>
+<div class="text-center p-6 bg-surface-light dark:bg-surface-dark rounded-lg shadow-md">
+<div class="bg-accent text-white p-4 rounded-full inline-block mb-4"><span class="material-symbols-outlined">code</span></div>
+<h3 class="text-xl font-semibold mb-2">Clean Code</h3>
+<p class="text-subtext-light dark:text-subtext-dark">Built on a solid foundation of high-quality code, ensuring stability and performance.</p>
+</div>
+<div class="text-center p-6 bg-surface-light dark:bg-surface-dark rounded-lg shadow-md">
+<div class="bg-accent text-white p-4 rounded-full inline-block mb-4"><span class="material-symbols-outlined">desktop_windows</span></div>
+<h3 class="text-xl font-semibold mb-2">Cross-Platform</h3>
+<p class="text-subtext-light dark:text-subtext-dark">Use our app on any device. Your data syncs seamlessly across desktop and mobile.</p>
+</div>
+<div class="text-center p-6 bg-surface-light dark:bg-surface-dark rounded-lg shadow-md">
+<div class="bg-accent text-white p-4 rounded-full inline-block mb-4"><span class="material-symbols-outlined">security</span></div>
+<h3 class="text-xl font-semibold mb-2">Secure &amp; Private</h3>
+<p class="text-subtext-light dark:text-subtext-dark">We prioritize your privacy and security with end-to-end encryption and robust data protection.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 text-white bg-primary diagonal-clip-both" id="download">
+<div class="container mx-auto px-6 text-center">
+<h2 class="text-3xl md:text-4xl font-bold">Download Our App</h2>
+<p class="mt-4 max-w-2xl mx-auto opacity-80">Get our app for your favorite platform and start your journey with us today.</p>
+<div class="mt-8 flex flex-wrap justify-center gap-4">
+<a class="bg-white/20 hover:bg-white/30 transition text-white rounded-lg px-6 py-3 flex items-center gap-3" href="#">
+<span class="material-symbols-outlined">apple</span>
+<div>
+<p class="text-sm">Available on the</p>
+<p class="font-semibold text-lg">App Store</p>
+</div>
+</a>
+<a class="bg-white/20 hover:bg-white/30 transition text-white rounded-lg px-6 py-3 flex items-center gap-3" href="#">
+<span class="material-symbols-outlined">play_arrow</span>
+<div>
+<p class="text-sm">Get it on</p>
+<p class="font-semibold text-lg">Google Play</p>
+</div>
+</a>
+<a class="bg-white/20 hover:bg-white/30 transition text-white rounded-lg px-6 py-3 flex items-center gap-3" href="#">
+<span class="material-symbols-outlined">desktop_windows</span>
+<div>
+<p class="text-sm">Download for</p>
+<p class="font-semibold text-lg">Windows</p>
+</div>
+</a>
+</div>
+</div>
+</section>
+<section class="py-20 bg-surface-light dark:bg-surface-dark" id="pricing">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark">Our Pricing Plan</h2>
+<p class="mt-4 text-subtext-light dark:text-subtext-dark max-w-2xl mx-auto">Choose a plan that works for you. All plans come with a 14-day free trial.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+<div class="bg-background-light dark:bg-background-dark rounded-lg shadow-lg overflow-hidden flex flex-col">
+<div class="p-6 bg-primary text-white text-center">
+<h3 class="text-xl font-bold">Personal</h3>
+<p class="text-4xl font-extrabold mt-2">$9<span class="text-lg font-medium opacity-80">/month</span></p>
+</div>
+<ul class="p-6 space-y-4 text-subtext-light dark:text-subtext-dark flex-grow">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-accent">check_circle</span> 1 User</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-accent">check_circle</span> 10 GB Storage</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-accent">check_circle</span> Basic Analytics</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-accent">check_circle</span> Email Support</li>
+</ul>
+<div class="p-6 mt-auto">
+<a class="block w-full text-center bg-primary text-white py-3 rounded-md hover:bg-secondary transition" href="#">Choose Plan</a>
+</div>
+</div>
+<div class="bg-background-light dark:bg-background-dark rounded-lg shadow-2xl overflow-hidden flex flex-col border-2 border-secondary transform scale-105">
+<div class="p-6 bg-secondary text-white text-center">
+<h3 class="text-xl font-bold">Team</h3>
+<p class="text-4xl font-extrabold mt-2">$29<span class="text-lg font-medium opacity-80">/month</span></p>
+</div>
+<ul class="p-6 space-y-4 text-subtext-light dark:text-subtext-dark flex-grow">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-accent">check_circle</span> 5 Users</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-accent">check_circle</span> 100 GB Storage</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-accent">check_circle</span> Advanced Analytics</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-accent">check_circle</span> Priority Support</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-accent">check_circle</span> Team Collaboration</li>
+</ul>
+<div class="p-6 mt-auto">
+<a class="block w-full text-center bg-secondary text-white py-3 rounded-md hover:bg-opacity-90 transition" href="#">Choose Plan</a>
+</div>
+</div>
+<div class="bg-background-light dark:bg-background-dark rounded-lg shadow-lg overflow-hidden flex flex-col">
+<div class="p-6 bg-primary text-white text-center">
+<h3 class="text-xl font-bold">Business</h3>
+<p class="text-4xl font-extrabold mt-2">$99<span class="text-lg font-medium opacity-80">/month</span></p>
+</div>
+<ul class="p-6 space-y-4 text-subtext-light dark:text-subtext-dark flex-grow">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-accent">check_circle</span> Unlimited Users</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-accent">check_circle</span> 1 TB Storage</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-accent">check_circle</span> Full Analytics Suite</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-accent">check_circle</span> 24/7 Phone Support</li>
+</ul>
+<div class="p-6 mt-auto">
+<a class="block w-full text-center bg-primary text-white py-3 rounded-md hover:bg-secondary transition" href="#">Choose Plan</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-background-light dark:bg-background-dark" id="reviews">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark">What Our Users Say</h2>
+<p class="mt-4 text-subtext-light dark:text-subtext-dark max-w-2xl mx-auto">We love our users, and they love us. Here's what they have to say about our app.</p>
+</div>
+<div class="relative max-w-3xl mx-auto">
+<div class="bg-surface-light dark:bg-surface-dark p-8 rounded-lg shadow-lg text-center">
+<img alt="User avatar" class="w-24 h-24 rounded-full mx-auto -mt-20 mb-4 border-4 border-background-light dark:border-background-dark" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC61GZriobEG4qL3NPPe4KwBVlDdE2vtqE_GYj682hbvZ4h59Rd2OIuMJht2B9spsJE4se1foTu9DuayIj9i3r1YE14udRrQoUfS_gOgd0NESkJ6o-hlEG6tq_rijKkWx4JMOQVzfeJ-XEnFs_is3S0tuBrrUTeejYXC0cZccmee7h4XsnyotBh9Jez2JKoRm56J9SOq3zcms0opTKFR_66Q1dqPPDukVag74tPLU6gMn1iz9me3qHjP4h_SX3MOrZtMbT3cDq3KmM"/>
+<h3 class="text-xl font-semibold">Jane Doe</h3>
+<p class="text-subtext-light dark:text-subtext-dark mb-4">Product Designer</p>
+<div class="flex justify-center text-secondary mb-4">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<p class="text-subtext-light dark:text-subtext-dark italic">"This app has completely transformed my workflow. It's intuitive, powerful, and beautifully designed. I can't imagine working without it anymore."</p>
+</div>
+<button class="absolute top-1/2 -translate-y-1/2 -left-12 bg-surface-light dark:bg-surface-dark p-2 rounded-full shadow-md hover:bg-secondary hover:text-white transition"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="absolute top-1/2 -translate-y-1/2 -right-12 bg-surface-light dark:bg-surface-dark p-2 rounded-full shadow-md hover:bg-secondary hover:text-white transition"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+</div>
+</section>
+<section class="py-20 bg-surface-light dark:bg-surface-dark" id="screenshots">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark">App Screenshots</h2>
+<p class="mt-4 text-subtext-light dark:text-subtext-dark max-w-2xl mx-auto">Take a look at our app's clean and modern interface.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<img alt="App screenshot 1" class="rounded-lg shadow-lg object-cover w-full h-96" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBC5QDiECHmCaVEQno2JbKZccTfx56AIQzzopv64UYF_W4uX4hzD9_sdhycWgH3mNVnFkF0IIIbaLlS-b_y0YWiI2MMrUwXWOw9Nek33Cne_BF-Hc1Vk9P3jNILl74MI158gY3gE0tfXSXOLNReWxj1YzxTaamDyqM-FQTd6Kp5Pos6V8LgvUppW_RdZxcJ_RdwhPpHUVwNdcVtYRuNrCsY4wd6xKrj1bQ5Iy4IFEge1GD9gwyQJ9utU75c5UukNzUvbiYTj_G5os8"/>
+<img alt="App screenshot 2" class="rounded-lg shadow-lg object-cover w-full h-96" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdvqzW9PzyHYYO1qs9A_mrr69buhC5nDU-fGyO6wsyRlh1RAw05sH3FZLL7dnu6xxzRd1Yflwy-CV15KnURxkEbMu5m4XTf396OYpOqA4cnTbcwSnKAvNMKABwwX3KTfQwZrJqZAkhCWA456313ZylcmkgxpCEXJ92LD7DldIk6M9oZ0kK_JLLDcQwsc9sNiq4AiL-MDELeFnH3fXGuIW9nIwtwymO3rM5MTxbv3NZKHNGvtohJQLjuXTrfdzzjCUn5d-dYnqB1sA"/>
+<img alt="App screenshot 3" class="rounded-lg shadow-lg object-cover w-full h-96" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBG3g9UqQ-onW_ZNB0Td7rMVSvKbAHNMYRvs3cI9J11WrWKjBsl_6_0f8I1F4IclVxymcKSBPr4zqKl59nIkxqZWcvxkR43mwmbiFSDtnTNlM9PCrbEZxNwc9dZSVPU24-TgkSacdPKysm4IK1ZE3slppYfwsNXNGawTltyDeBvVExKqIZ7BGNMs6FO6NaTmmm4gM6zrGTWOCNHkwbd5wdeE_PdHwAZ08pSObikArpXnttzP4oqROKp6Ona3JMOTK0E3TtTO4n3sw"/>
+<img alt="App screenshot 4" class="rounded-lg shadow-lg object-cover w-full h-96" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa-9kBnE9BYQigT7u9nd6qr7SvpTdvytmu9mnCJxDjZmyEo6__ODyMp-Gqh5T1yuIewecvjUogzrM_wvzEin0WDUoZ5CwcuP17jjy3uJtYoUVAfkApsubQWFjDjcloUS6v9rwhgEvxIegkN7CQrVxA5AbP9XfjGSqVrYRL4ZD-f9tCIRPZd6NUsLu4YAVuqR81OUq1TYO1F0xDQ-lGFP0Po7oSUCL4dzYY_gi4o2jtNVBRvpVLwSzSaXVwv5jJohCFd9w_fCByCXY"/>
+</div>
+</div>
+</section>
+<section class="py-20 bg-background-light dark:bg-background-dark" id="blog">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark">Our Blog</h2>
+<p class="mt-4 text-subtext-light dark:text-subtext-dark max-w-2xl mx-auto">Read our latest articles about design, technology, and productivity.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-surface-light dark:bg-surface-dark rounded-lg shadow-md overflow-hidden">
+<img alt="Blog post image" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZKXl-6E-qZNG6CNvb7m648RfMnyHz_eEXQPVHdpw7hce8GgqckNCx_XsAqjsIL4j9vkybQVG-AkWdcQKIc20Tllt_PRN5fpL-xQWdKV3WmhRxy_eSCFhJ0XYqQTPCT-971ktLWomzyTAzA1Fpw0DEImQTqU6T00ksrMas-OclQcjiinqiJi3zO7lcpJ9GD0eBRbViTWCiAVx5p62ZFAwS-nAJAVZFPqsNLcQCjZpzdnoIpaiHbzc8XeS0V04qQxI6HL5FK2t2mW4"/>
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">5 Tips for Better Productivity</h3>
+<p class="text-sm text-subtext-light dark:text-subtext-dark mb-4">Posted on Jan 25, 2023 by John Doe</p>
+<p class="text-subtext-light dark:text-subtext-dark mb-4">Discover five simple yet effective tips to boost your daily productivity and achieve your goals faster.</p>
+<a class="font-semibold text-accent hover:text-secondary transition" href="#">Read More</a>
+</div>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark rounded-lg shadow-md overflow-hidden">
+<img alt="Blog post image" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfZcXu5aBk1zsaD7pcNGHMTXFEew3RV-6UQfnH3vOXB-jceBvKIT3HW7L8xnd_UsyT2_6Ddo10xAw7KqylIQsuMAng2LcN3XkHZFHjYTRMvOWb7KWVFvWczjQgzFQhzAPFQabXcgzjNNOhB9J2C94nmrEazhTourh8Z9ZpUy_9AnfQHvLo3I2MDLS8zChErPDB4vwVQgaIv9MVi69Z7aahLa2ZdB7CCuEnMsBPA_nPgg58QskkRnx3gGzYhUzq-qZxYOvi39kt75c"/>
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">The Future of UI/UX Design</h3>
+<p class="text-sm text-subtext-light dark:text-subtext-dark mb-4">Posted on Jan 22, 2023 by Jane Smith</p>
+<p class="text-subtext-light dark:text-subtext-dark mb-4">Explore the upcoming trends in user interface and user experience design for the coming year.</p>
+<a class="font-semibold text-accent hover:text-secondary transition" href="#">Read More</a>
+</div>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark rounded-lg shadow-md overflow-hidden">
+<img alt="Blog post image" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOo5K3U-r_NdHhRQST6tzGSw3gLV8SZi-gDINCymFd0_qU8A2vfp-UmDxFuHMs4bfToLRPmrRb8oxTITaB6and794vn3Dy5vxuJUIRvpPARipcdM1DipF2gy0Vi1OSJJhRVvX5YGBp2u3L19ySekod_Ml3TcRqu9TI4JT4Qlx5pTUi-mrC36AAzCFJxV8P_6BFAgkHfA2jV55csf8hFfYRp8waR85CDgitTPfVrvsGDQKq-Gs03SqWfXzgWssaQ6e7iwqijXXHHXg"/>
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">How Our App Uses AI</h3>
+<p class="text-sm text-subtext-light dark:text-subtext-dark mb-4">Posted on Jan 19, 2023 by AppCo Team</p>
+<p class="text-subtext-light dark:text-subtext-dark mb-4">A behind-the-scenes look at how we leverage artificial intelligence to power our app's features.</p>
+<a class="font-semibold text-accent hover:text-secondary transition" href="#">Read More</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-primary text-white pt-20 pb-8 diagonal-clip-bottom -mt-10" id="contact">
+<div class="container mx-auto px-6">
+<div class="grid md:grid-cols-2 gap-12 mb-12">
+<div>
+<h2 class="text-3xl font-bold mb-2">Get in Touch</h2>
+<p class="opacity-80 mb-6">Have a question? We'd love to hear from you.</p>
+<form class="space-y-4">
+<input class="w-full bg-white/10 border-white/20 rounded-md py-2 px-4 focus:ring-secondary focus:border-secondary placeholder-white/50" placeholder="Your Name" type="text"/>
+<input class="w-full bg-white/10 border-white/20 rounded-md py-2 px-4 focus:ring-secondary focus:border-secondary placeholder-white/50" placeholder="Your Email" type="email"/>
+<textarea class="w-full bg-white/10 border-white/20 rounded-md py-2 px-4 focus:ring-secondary focus:border-secondary placeholder-white/50" placeholder="Your Message" rows="4"></textarea>
+<button class="bg-secondary text-white px-6 py-3 rounded-md font-semibold hover:bg-opacity-90 transition" type="submit">Send Message</button>
+</form>
+</div>
+<div class="space-y-12">
+<div>
+<h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+<div class="space-y-3 opacity-80">
+<p class="flex items-center gap-3"><span class="material-symbols-outlined">phone</span> <span>+1 234 567 890</span></p>
+<p class="flex items-center gap-3"><span class="material-symbols-outlined">mail</span> <span>contact@appco.com</span></p>
+<p class="flex items-center gap-3"><span class="material-symbols-outlined">location_on</span> <span>123 App Street, Tech City</span></p>
+</div>
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-4">Subscribe to our Newsletter</h3>
+<p class="opacity-80 mb-4">Get the latest news, updates, and special offers delivered directly to your inbox.</p>
+<form class="flex gap-2">
+<input class="w-full bg-white/10 border-white/20 rounded-md py-2 px-4 focus:ring-secondary focus:border-secondary placeholder-white/50" placeholder="Enter your email" type="email"/>
+<button class="bg-secondary text-white px-6 py-2 rounded-md font-semibold hover:bg-opacity-90 transition" type="submit">Subscribe</button>
+</form>
+</div>
+</div>
+</div>
+<div class="border-t border-white/20 pt-8 mt-12 text-center text-white/60">
+<p>© 2023 AppCo. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+
+</body></html>

@@ -1,13 +1,20 @@
 :root {
-  /* Colors */
+  /* Colors - Inspired by modern UI (code.html) */
   --color-primary: #1E3FA7;
   --color-primary-dark: #1a3589;
+  --color-primary-light: #5098EA;
   --color-accent: #F97316;
   --color-accent-hover: #ea6a0a;
-  --color-bg: #E3ECF3;
-  --color-text: #1a1a1a;
-  --color-text-light: #666;
+  --color-bg: #FFFFFF;
+  --color-bg-light: #F9FAFB;
+  --color-surface: #FFFFFF;
+  --color-surface-dark: #1F2937;
+  --color-text: #374151;
+  --color-text-light: #6B7280;
+  --color-text-dark: #111827;
+  --color-subtext: #9CA3AF;
   --color-white: #ffffff;
+  --color-border: rgba(0, 0, 0, 0.1);
   
   /* Spacing */
   --spacing-xs: 0.5rem;

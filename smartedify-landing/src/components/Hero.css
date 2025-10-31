@@ -28,11 +28,21 @@
   align-items: center;
 }
 
-.hero-text h1 {
+.hero-title {
   font-size: var(--font-size-5xl);
   color: var(--color-white);
   margin-bottom: var(--spacing-md);
   line-height: 1.2;
+  font-weight: 800;
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.hero-description {
+  font-size: var(--font-size-xl);
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--spacing-xl);
+  line-height: 1.8;
+  animation: slideInLeft 1s ease-out;
 }
 
 .hero-text .highlight {
@@ -92,16 +102,35 @@
 }
 
 .service-icon {
-  width: 45px;
-  height: 45px;
-  background: var(--color-accent);
-  border-radius: var(--radius-sm);
+  width: 55px;
+  height: 55px;
+  border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-white);
-  font-size: var(--font-size-xl);
-  margin-bottom: var(--spacing-xs);
+  margin-bottom: var(--spacing-sm);
+  transition: transform var(--transition-base);
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.gradient-finance {
+  background: linear-gradient(135deg, #5098EA 0%, #1E3FA7 100%);
+}
+
+.gradient-calendar {
+  background: linear-gradient(135deg, #F97316 0%, #ea6a0a 100%);
+}
+
+.gradient-users {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+}
+
+.gradient-docs {
+  background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
 }
 
 .service-title {

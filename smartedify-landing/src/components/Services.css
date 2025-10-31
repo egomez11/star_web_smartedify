@@ -34,9 +34,10 @@
   padding: var(--spacing-xl);
   border-radius: var(--radius-xl);
   transition: all var(--transition-base);
-  border: 2px solid transparent;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   position: relative;
   overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .service-item::before {
@@ -64,14 +65,27 @@
 .service-item-icon {
   width: 70px;
   height: 70px;
-  background: var(--color-accent);
+  background: linear-gradient(135deg, #5098EA 0%, #1E3FA7 100%);
   border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-white);
-  font-size: var(--font-size-3xl);
   margin-bottom: var(--spacing-md);
+  transition: all var(--transition-base);
+}
+
+.service-item:hover .service-item-icon {
+  transform: scale(1.1) rotate(-5deg);
+  box-shadow: 0 10px 30px rgba(80, 152, 234, 0.4);
+}
+
+.service-item:nth-child(even) .service-item-icon {
+  background: linear-gradient(135deg, #F97316 0%, #ea6a0a 100%);
+}
+
+.service-item:nth-child(even):hover .service-item-icon {
+  box-shadow: 0 10px 30px rgba(249, 115, 22, 0.4);
 }
 
 .service-item h3 {
