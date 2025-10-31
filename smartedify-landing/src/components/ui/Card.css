@@ -1,0 +1,11 @@
+.card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+}
+
+.card-floating {
+  animation: float 6s ease-in-out infinite;
+}
