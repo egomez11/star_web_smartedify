@@ -1,11 +1,25 @@
-### Step 1: Set Up Your React Environment
+# SmartEdify Landing Page
 
-Make sure you have a React environment set up. You can use Create React App for this:
+Landing page moderna para la plataforma SmartEdify de gestión de condominios.
+
+## 🚀 Tecnologías
+
+- **React 18** - Biblioteca UI
+- **TypeScript** - Tipado estático
+- **Vite** - Build tool y dev server
+- **CSS Modules** - Estilos con scope
+
+## 📦 Instalación
 
 ```bash
-npx create-react-app smartedify-landing
 cd smartedify-landing
-npm start
+npm install
+```
+
+## 🛠️ Desarrollo
+
+```bash
+npm run dev
 ```
 
 ### Step 2: Install Required Libraries
