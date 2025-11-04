@@ -8,13 +8,13 @@ import './Services.css';
 const services = [
   {
     icon: FiShield,
-    title: 'Governance Service',
+    title: 'Governanza',
     description: 'Motor de asambleas y democratizacion de la participacion independientemente de en que parte del mundo te encuentras.',
     features: [
       'Asambleas virtuales legalmente validas',
       'Votacion en tiempo real',
       'Moderador integrado con IA',
-      'Emision de QR para acceso'
+      'Emision de actas'
     ]
   },
   {
