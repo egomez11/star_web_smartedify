@@ -24,14 +24,15 @@ export const images = {
 
   // Features
   features: {
-    governance: '/images/feature-governance.jpg',
-    compliance: '/images/feature-compliance.jpg',
-    reservations: '/images/feature-reservations.jpg',
-    assets: '/images/feature-assets.jpg',
+    // Apuntando a assets disponibles en public/images
+    governance: '/images/logo-assembly.png',
+    compliance: '/images/logo-security.png',
+    reservations: '/images/logo-reservation.png',
+    assets: '/images/logo-mantenimiento.png',
     finance: '/images/logo-finanzas.png',
-    payroll: '/images/feature-payroll.jpg',
-    hr: '/images/feature-hr.jpg',
-    documents: '/images/feature-documents.jpg',
+    payroll: '/images/logo-finanzas.png',
+    hr: '/images/logo-rrhh.png',
+    documents: '/images/logo-smartedify.jpg',
   },
 
   // Platform
@@ -54,21 +55,22 @@ export const icons = {
   custom: {
     // Usamos el logo proporcionado como icono de gobernanza (archivo en public/images)
     governance: '/images/logo-assembly.png',
-    compliance: '/icons/compliance.svg',
-    reservations: '/icons/reservations.svg',
-    assets: '/icons/assets.svg',
-    finance: '/icons/finance.svg',
-    payroll: '/icons/payroll.svg',
-    hr: '/icons/hr.svg',
-    documents: '/icons/documents.svg',
+    compliance: '/images/logo-security.png',
+    reservations: '/images/logo-reservation.png',
+    assets: '/images/logo-mantenimiento.png',
+    finance: '/images/logo-finanzas.png',
+    payroll: '/images/logo-finanzas.png',
+    hr: '/images/logo-rrhh.png',
+    documents: '/images/logo-smartedify.jpg',
   },
 
   // Favicon
   favicon: {
-    ico: '/icons/favicon.ico',
-    png16: '/icons/favicon-16x16.png',
-    png32: '/icons/favicon-32x32.png',
-    appleTouchIcon: '/icons/apple-touch-icon.png',
+    // Se usa el favicon disponible en public/icons
+    ico: '/icons/favicon.svg',
+    png16: '/icons/favicon.svg',
+    png32: '/icons/favicon.svg',
+    appleTouchIcon: '/icons/favicon.svg',
   },
 };
 
