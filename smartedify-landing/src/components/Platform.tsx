@@ -1,9 +1,11 @@
 import React from 'react';
+import { GobernanzaIcon } from './ui/GobernanzaIcon';
 import './Platform.css';
 
 const features = [
   {
-    icon: '🔐',
+    // Mostrar el icono de gobernanza usando el componente nuevo
+    icon: <GobernanzaIcon size="sm" alt="Gobernanza" />,
     title: 'Autenticación Fuerte',
     description: 'WebAuthn/Passkeys (AAL3) con MFA adaptativo y DPoP'
   },

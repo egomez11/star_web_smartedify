@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button } from './ui/Button';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { images } from '../config/assets';
+import { GobernanzaIcon } from './ui/GobernanzaIcon';
 import './Header.css';
 
 export const Header: React.FC = () => {
@@ -34,6 +35,7 @@ export const Header: React.FC = () => {
           </ul>
 
           <div className="header-cta">
+            <GobernanzaIcon size="md" className="gov-cta" alt="Gobernanza" />
             <Button variant="primary" href="#demo">
               Solicitar Demo
             </Button>
