@@ -52,7 +52,8 @@ export const images = {
 export const icons = {
   // Iconos personalizados (cuando estén disponibles)
   custom: {
-    governance: '/icons/governance.svg',
+    // Usamos el logo proporcionado como icono de gobernanza (archivo en public/images)
+    governance: '/images/logo-assembly.png',
     compliance: '/icons/compliance.svg',
     reservations: '/icons/reservations.svg',
     assets: '/icons/assets.svg',
