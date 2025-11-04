@@ -28,7 +28,7 @@ export const images = {
     compliance: '/images/feature-compliance.jpg',
     reservations: '/images/feature-reservations.jpg',
     assets: '/images/feature-assets.jpg',
-    finance: '/images/feature-finance.jpg',
+    finance: '/images/logo-finanzas.png',
     payroll: '/images/feature-payroll.jpg',
     hr: '/images/feature-hr.jpg',
     documents: '/images/feature-documents.jpg',
