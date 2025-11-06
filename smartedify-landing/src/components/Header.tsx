@@ -33,12 +33,12 @@ export const Header: React.FC = () => {
             <li><a href="#platform" onClick={() => setIsMenuOpen(false)}>Plataforma</a></li>
             <li><a href="#contact" onClick={() => setIsMenuOpen(false)}>Contacto</a></li>
           </ul>
-            <div className="header-cta">
+
+          <div className="header-cta">
             <GobernanzaIcon size="md" className="gov-cta" alt="Gobernanza" />
             <Button variant="primary" href="#demo">
               Solicitar Demo
             </Button>
-          </div>
           </div>
         </nav>
       </div>
