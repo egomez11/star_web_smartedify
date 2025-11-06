@@ -35,7 +35,6 @@ export const Header: React.FC = () => {
           </ul>
 
           <div className="header-cta">
-            <GobernanzaIcon size="md" className="gov-cta" alt="Gobernanza" />
             <Button variant="primary" href="#demo">
               Solicitar Demo
             </Button>
