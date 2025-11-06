@@ -1,5 +1,4 @@
 import React from 'react';
-import { Icon } from './Icon';
 import { icons } from '../../config/assets';
 
 interface GobernanzaIconProps {
@@ -23,13 +22,14 @@ export const GobernanzaIcon: React.FC<GobernanzaIconProps> = ({
   const src = (icons && icons.custom && icons.custom.governance) || '/images/logo-assembly.png';
 
   return (
-    <Icon size={size} className={className}>
+    <div className={className} style={{ display: 'inline-flex', alignItems: 'center' }}>
       <img
         src={src}
         alt={alt}
         style={{ width: px, height: 'auto', display: 'block', borderRadius: 4 }}
+        loading="lazy"
       />
-    </Icon>
+    </div>
   );
 };
 

@@ -33,6 +33,18 @@ jobs:
         working-directory: ./smartedify-landing
         run: npm ci
         
+      - name: Run lint
+        working-directory: ./smartedify-landing
+        run: npm run lint
+
+      - name: Typecheck
+        working-directory: ./smartedify-landing
+        run: npm run typecheck
+
+      - name: Run tests
+        working-directory: ./smartedify-landing
+        run: npm test
+        
       - name: Build
         working-directory: ./smartedify-landing
         run: npm run build

@@ -4,27 +4,14 @@
  */
 
 export const images = {
-  // Logos
+  // Logos principales (disponibles en public/images)
   logo: {
     main: '/images/logo-smartedify.jpg',
     alt: 'SmartEdify Logo',
   },
 
-  // Hero Section
-  hero: {
-    background: '/images/hero-bg.jpg',
-    dashboard: '/images/dashboard-preview.jpg',
-  },
-
-  // About Section
-  about: {
-    dashboard: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&q=80',
-    team: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop&q=80',
-  },
-
-  // Features
+  // Features - Usando solo imágenes disponibles en public/images
   features: {
-    // Apuntando a assets disponibles en public/images
     governance: '/images/logo-assembly.png',
     compliance: '/images/logo-security.png',
     reservations: '/images/logo-reservation.png',
@@ -35,25 +22,25 @@ export const images = {
     documents: '/images/logo-smartedify.jpg',
   },
 
-  // Platform
-  platform: {
-    architecture: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop&q=80',
-    security: '/images/platform-security.jpg',
+  // About Section - Usando Unsplash como fallback para dashboards
+  about: {
+    dashboard: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&q=80',
+    team: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop&q=80',
   },
 
-  // Placeholders (Unsplash)
+  // Placeholders (Unsplash) - Para mockups y demos
   placeholders: {
     tech: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&q=80',
     dashboard: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&q=80',
     analytics: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&q=80',
+    architecture: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop&q=80',
     mobile: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop&q=80',
   },
 };
 
 export const icons = {
-  // Iconos personalizados (cuando estén disponibles)
+  // Iconos personalizados usando logos disponibles
   custom: {
-    // Usamos el logo proporcionado como icono de gobernanza (archivo en public/images)
     governance: '/images/logo-assembly.png',
     compliance: '/images/logo-security.png',
     reservations: '/images/logo-reservation.png',
@@ -66,7 +53,6 @@ export const icons = {
 
   // Favicon
   favicon: {
-    // Se usa el favicon disponible en public/icons
     ico: '/icons/favicon.svg',
     png16: '/icons/favicon.svg',
     png32: '/icons/favicon.svg',
